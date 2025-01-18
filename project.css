@@ -1,0 +1,47 @@
+.container{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main  h1{
+    margin-top: 50px;
+    font-size: 2.5em;
+    color:#7d2ae8;
+}
+
+.span{
+    margin-top: 15px;
+    font-size: 2.2em;
+    color: transparent;
+    animation: text 1.5s ease-in-out infinite;
+    background:linear-gradient(#7d2ae8, #7d2ae8);
+    -webkit-background-clip: text;
+    background-repeat: no-repeat;
+    background-position: -10px 0;
+}
+
+@keyframes text{
+    0%,
+    95%,
+    100% {
+       background-position: -66px 0;
+    }
+
+    65%, 85%{
+        background-position: 0 0 ;
+    }
+}
+
+
+@media screen and (320px <= width <= 425px) {
+   main h1{
+        margin-top: 160px;
+        font-size: 1.7em;
+    }
+
+    main .span{
+        font-size: 2em;
+    }
+}

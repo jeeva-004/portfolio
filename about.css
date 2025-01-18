@@ -1,0 +1,199 @@
+.container {
+    display: block;
+    clear: both;
+    padding: 100px 0 30px;
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.sub-container {
+    width: 90%;
+    height: auto;
+    margin-top: 25px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #7d2ae8;
+}
+
+.h1 {
+    color: #7d2ae8;
+    position: relative;
+    font-size: 1.5em;
+}
+
+.h1::after {
+    content: " ";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 4px;
+    border-radius: 5px;
+    width: 100%;
+    background-color: #7d2ae8;
+    transition: width .3s ease-in-out;
+}
+
+.about-me {
+    text-indent: 1.5em;
+    text-align: justify;
+    line-height: 1.3em;
+    margin: 25px 0px 20px;
+}
+
+.about-me::first-letter {
+    font-size: 1.4em;
+}
+
+.about-first-section p {
+    text-align: justify;
+    text-indent: 1.5em;
+    color: #615c5c;
+}
+
+.first-para {
+    margin-top: 20px;
+}
+
+.my-photo {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-left: 15px;
+    box-shadow: 0px 0px 10px hsl(266, 76%, 65%);
+    transition: box-shadow .4s;
+}
+
+.my-photo:hover {
+    box-shadow: 0px 0px 20px hsl(266, 76%, 65%);
+}
+
+p {
+    line-height: 1.8em;
+    font-size: .9em;
+}
+
+.for-span {
+    font-weight: bolder;
+}
+
+.about-first-section,
+.about-second-section {
+    padding: 30px;
+}
+
+.about-second-section table {
+    width: 100%;
+    border-collapse: collapse;
+    overflow: auto;
+}
+
+caption {
+    font-weight: 500;
+    font-size: 1.3em;
+    margin: 10px 0px;
+}
+
+.about-second-section th,
+td {
+    text-align: center;
+    padding: 15px 5px;
+}
+
+.about-second-section th {
+    color: #4b3f3f;
+}
+
+.about-second-section td {
+    font-size: .8em;
+    color: #615c5c;
+    font-weight: 600;
+}
+
+@media screen and (max-width: 768px) {
+
+    .container {
+        display: block;
+        padding: 60px 0 30px;
+        height: auto;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .sub-container {
+        max-width: 90%;
+        border-radius: 8px;
+    }
+
+    .about-first-section p {
+        text-align: justify;
+        font-size: .8em;
+    }
+
+    .about-first-section,
+    .about-second-section {
+        padding: 15px;
+    }
+}
+
+@media screen and (320px <= width <=425px) {
+    .container {
+        width: 100%;
+        padding: 0;
+    }
+
+    .sub-container{
+        margin-top: 200px;
+    }
+
+    .h1 {
+        text-align: center;
+    }
+
+    .sub-container {
+        width: 100%;
+        margin: 180px 0 25px;
+        padding: 10px;
+    }
+
+    .about-first-section,
+    .about-second-section {
+        width: 100%;
+        padding: 0px;
+        overflow: auto;
+    }
+
+    table td {
+        padding: 5px 10px;
+    }
+
+    .my-photo {
+        width: 220px;
+        height: 220px;
+        border-radius: 50%;
+        align-items: center;
+        margin: 15px;
+        box-shadow: 0px 0px 10px hsl(266, 76%, 65%);
+        transition: box-shadow .4s;
+    }
+}
+
+@media screen and (max-width:425px) {
+    .my-photo {
+        margin-left: 70px;
+    }
+}
+
+@media screen and (max-width:375px) {
+    .my-photo {
+        margin-left: 45px;
+    }
+}
+
+@media screen and (max-width:320px) {
+    .my-photo {
+        margin-left: 22px;
+    }
+}

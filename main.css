@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*,
+.copy {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: "Poppins", serif;
+   user-select: none;
+}
+
+/* header */
+
+header {
+   display: flex;
+   padding: 5px 50px;
+   background-color: hsl(262, 78%, 83%);
+   justify-content: space-between;
+   position: fixed;
+   align-items: center;
+   top: 0;
+   left: 0;
+   width: 100%;
+   z-index: 1;
+}
+
+header .logo{
+   width: 100px;
+   height: 80px;
+}
+nav {
+   align-self: center;
+   margin: 10px 60px 0 0;
+}
+
+nav a {
+   font-size: .85em;
+   font-weight: 400;
+   align-items: center;
+   text-decoration: none;
+   color: #746d6d;
+   margin-right: 30px;
+   position: relative;
+   padding: 3px;
+   transition: .15s ease;
+}
+
+nav a::after {
+   content: " ";
+   position: absolute;
+   left: 0;
+   bottom: 0;
+   height: 2px;
+   border-radius: 10px;
+   background-color: #7d2ae8;
+   width: 0;
+   transition: width .4s ease;
+}
+
+nav a:hover::after {
+   width: 100%;
+}
+
+.navigation a:hover {
+   color: #7d2ae8;
+}
+
+.btn-talk {
+   color: #fff;
+   text-decoration: none;
+   padding: 8px 25px;
+   /* padding: 8px 30px; */
+   background-color: #7d2ae8;
+   font-size: .8em;
+   justify-self: end;
+   font-weight: 500;
+   border: 2px solid #7d2ae8;
+   border-radius: 10px;
+   transition: .3s;
+}
+
+.btn-talk:hover {
+   background-color: white;
+   box-shadow: 0px 0px 3px #7d2ae8;
+   color: #7d2ae8;
+}
+
+/* header */
+
+
+/* footer */
+
+footer {
+   background-color: hsl(262, 78%, 83%);
+}
+
+.icon a {
+   height: 35px;
+   width: 35px;
+   color: #fff;
+   display: inline-block;
+   align-items: center;
+   text-align: center;
+   background-color: #7d2ae8;
+   margin-right: 15px;
+   border-radius: 50%;
+   line-height: 32px;
+   transition: .3s;
+   text-align: center;
+}
+
+.icon a i {
+   font-size: .7em;
+   border: 3px solid #fff;
+   border-radius: 50%;
+   padding: 3px;
+}
+
+.icon a:hover {
+   transform: translateY(-5px);
+   box-shadow: 1px 1px 10px #7d2ae8;
+}
+
+footer {
+   width: 100%;
+   padding: 20px 50px 10px;
+}
+
+.one {
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+   /* flex-direction: column; */
+   row-gap: 20px;
+}
+
+footer h2 {
+   margin-bottom: 15px;
+   color: #7d2ae8;
+}
+
+.one p {
+   color: #746d6d;
+   font-size: .8em;
+}
+
+.one p i {
+   margin-right: 10px;
+}
+
+.copy {
+   text-align: center;
+   font-size: .89em;
+   margin-top: 20px;
+}
+
+.copy i {
+   font-size: .8em;
+}
+
+.copy span {
+   color: #6c05f1;
+}
+
+::-webkit-scrollbar {
+   width: 8px;
+   height: 8px;
+}
+
+::-webkit-scrollbar-track {
+   background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+   background-color: hsl(262, 78%, 83%);
+   border-radius:8px;
+   border: 3px solid hsl(262, 78%, 83%);
+}
+
+::-webkit-scrollbar-thumb:hover {
+   background-color: #555;
+}
+
+/* footer */
+
+/* media query */
+
+@media screen and (max-width:768px) {
+   header {
+      width: 100%;
+      display: flex;
+      padding: 0 15px 10px;
+      justify-content: space-between;
+   }
+
+   header h1 {
+      font-size: 2em;
+   }
+
+   nav {
+      margin: 5px 0 0;
+   }
+
+   .navigation a {
+      font-size: .7em;
+      margin-right: 5px;
+   }
+
+   .btn-talk {
+      margin-top: 10px;
+   }
+
+   footer {
+      width: 100%;
+      padding: 10px 15px;
+   }
+
+   footer h2 {
+      margin: 0;
+   }
+
+   .one {
+      margin-bottom: 0;
+   }
+
+   .one p {
+      font-size: .7em;
+   }
+
+   .copy {
+      margin: 0;
+      padding: 0;
+   }
+}
+
+@media screen and (320px <=width <=425px) {
+   header {
+      width: 100%;
+      flex-direction: column;
+      row-gap: 10px;
+      padding: 10px;
+      display: flex;
+   }
+
+   header h1 {
+      font-size: 1.6em;
+   }
+
+   nav {
+      margin: 0;
+   }
+
+   .navigation a {
+      font-size: .8em;
+      margin-right: 0;
+   }
+
+   .btn-talk {
+      margin-top: 0;
+      padding: 5px 15px;
+      font-size: .8em;
+   }
+
+   footer {
+      width: 100%;
+      padding: 15px;
+      text-align: center;
+   }
+
+   footer h2 {
+      margin-bottom: 10px;
+   }
+
+   .one {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+   }
+
+   .one p {
+      font-size: .7em;
+   }
+
+   .copy {
+      font-size: .7em;
+      margin-top: 10px;
+   }
+
+}
+
+/* media query */
